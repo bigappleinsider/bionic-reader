@@ -3,11 +3,18 @@
 ### implement simple bionic reader
 
 ### Usage
-
+- Copy/Paste method implementation to desired website developer console
 ```
 diyOnicConverter(".content");
 diyOnicConverter(".content", 4);
 ```
+- Run current POC and use UI to apply bionic reader
+```
+yarn 
+yarn start
+```
+![local POC](screenshots/local-screenshot.png)
+
 
 ### Parameters
 
