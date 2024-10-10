@@ -2,6 +2,7 @@
  * Implement your converter function here.
  */
 const diyOnicConverter = (textContentContainerSelector) => {
+	const staticPrefix = 3; // number of characters that are bolded
 	const container = document.querySelector(textContentContainerSelector);
 	if (!container) {
 		console.error(
@@ -18,7 +19,8 @@ const diyOnicConverter = (textContentContainerSelector) => {
 		const words = paragraph.textContent.split(" ");
 		const bionicWords = words.map((word) => {
 			if (word.length > 1) {
-				const highlightLength = Math.ceil(word.length / 2);
+				//Only needs to support a static prefix length (ie. the number of letters that are bolded)
+				const highlightLength = Math.min(staticPrefix, word.length);
 				return `<strong>${word.slice(0, highlightLength)}</strong>${word.slice(
 					highlightLength
 				)}`;
