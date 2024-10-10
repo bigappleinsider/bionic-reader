@@ -17,12 +17,21 @@
   </head>
 
   <body>
+    <div>
+        <label for="staticPrefix">Static Prefix:</label>
+        <input type="text" id="staticPrefix" name="staticPrefix" />
+        <button id="convertButton">Apply DIY-onic Reader</button>
+        <button id="resetButton">Reset Content</button>
+      </div>
+
+      <div class="content">
+
     <h1>James Webb Space Telescope</h1>
-    <small>From Wikipedia, the free encyclopedia</small>
+    <small>From <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>, the free encyclopedia</small>
 
     <p>
       The
-      <b>James Webb Space Telescope</b>
+      <b>James <a href="https://en.wikipedia.org/wiki/Main_Page">Webb</a> Space Telescope</b>
       (<b>JWST</b>) is a
       <a href="/wiki/Space_telescope" title="Space telescope"
         >space telescope</a
@@ -215,6 +224,7 @@
       remarked upon by the media, scientists, and engineers.
     </p>
 
+    </div>
     <script src="./diy-onic-converter.js"></script>
   </body>
 </html>
